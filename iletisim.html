@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* Tüm sayfanın arka planı beyaz */
+            color: #333;
+        }
+
+        /* Header için stil */
+        .main-nav {
+            display: flex; 
+            justify-content: space-between; 
+            background-color: #1a1a1a; /* Siyah header */
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+            border-bottom: 3px solid #ffcc00; /* Sarı alt çizgi */
+        }
+
+        .iletisim {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .isim, .fer {
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        .isim p, .fer p {
+            margin: 0;
+            font-weight: bold; /* İsimleri kalın yaptım */
+            color: #ffcc00; /* İsimler sarı renkte */
+        }
+
+        .telefon p {
+            margin: 5px 0 0 0;
+            color: #ddd; /* Telefon numaraları gri */
+        }
+
+        .telefon {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hover efektleri */
+        .isim p:hover, .fer p:hover {
+            color: #ff6600; /* İsimler üzerine gelince turuncu */
+            transition: color 0.3s ease;
+        }
+
+        .telefon p:hover {
+            color: #fff; /* Telefon numarası üzerine gelince beyaz */
+            transition: color 0.3s ease;
+        }
+
+        /* Sayfa genelinde daha estetik bir görünüm için */
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Footer tasarımı */
+        footer {
+            background-color: #1a1a1a; /* Siyah footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            border-top: 3px solid #ffcc00; /* Sarı üst çizgi */
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+        }
+
+        footer a {
+            color: #ffcc00; /* Linkler sarı */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff6600; /* Üzerine gelindiğinde turuncu */
+            transition: color 0.3s ease;
+        }
+
+        /* Mobil uyumluluk */
+        @media (max-width: 768px) {
+            .main-nav {
+                font-size: 25px;
+                flex-direction: column;
+            }
+
+            .iletisim {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .isim, .fer {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav"> 
+        <div class="iletisim">
+            <div class="isim">
+                <p>FATİH OKKA</p>
+                <div class="telefon">
+                    <p>TELEFON NUMARASI: *************</p>
+                </div>
+            </div>
+            <div class="fer">
+                <p id="isim1">FERHAT OKKA</p>
+                <div class="telefon">
+                    <p>TELEFON NUMARASI: ***************</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Hoş Geldiniz</h1>
+        <p> "Yapılara Hayat Verir, Şehirlere Estetik Katarız!".</p>
+    </main>
+
+    <footer>
+        <p>© 2024 Fatih ve Ferhat Okka. Tüm hakları saklıdır. | <a href="#">Gizlilik Politikası</a></p>
+    </footer>
+
+</body>
+</html>
